@@ -5,7 +5,7 @@ class CheckboxWidget extends StatelessWidget {
   final ValueChanged<bool?> onChanged;
   final String text;
   final TextStyle? textStyle;
-
+///THis Checkbox comes with TEXT widget
   const CheckboxWidget({
     super.key,
     required this.isChecked,
