@@ -1,3 +1,4 @@
+import 'package:custom_filled_button_package/custom_filled_button_package.dart';
 import 'package:flutter/material.dart';
 
 class CheckboxWidget extends StatelessWidget {
@@ -5,14 +6,22 @@ class CheckboxWidget extends StatelessWidget {
   final ValueChanged<bool?> onChanged;
   final String text;
   final TextStyle? textStyle;
-///THis Checkbox comes with TEXT widget
+
+  final IconData? filledButtonIcon;
+
+  final String? filledButtonText;
+
+  ///THis Checkbox comes with TEXT widget
   const CheckboxWidget({
     super.key,
+
     ///isChecked inu some value assign chy-nm
     required this.isChecked,
     required this.onChanged,
     required this.text,
     this.textStyle,
+    this.filledButtonIcon,
+    this.filledButtonText,
   });
 
   @override
@@ -34,7 +43,17 @@ class CheckboxWidget extends StatelessWidget {
         Text(
           text,
           style: textStyle,
+        ),
+        CustomFilledButton(
+          icon: filledButtonIcon,
+          buttonText: filledButtonText,
         )
+        // if (filledButtonText != null) ...[
+        //   CustomFilledButton(
+        //     icon: filledButtonIcon,
+        //     buttonText: filledButtonText,
+        //   )
+        // ]
       ],
     );
   }

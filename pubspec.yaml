@@ -1,7 +1,9 @@
 name: checkbox_with_text
 description: Checkbox with Text Widget
-version: 0.0.3
+version: 0.1.0
 homepage: https://github.com/AmosPeterAlex/checkbox_with_text.git
+publish_to: none
+
 
 environment:
   sdk: '>=3.4.1 <4.0.0'
@@ -10,6 +12,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  custom_filled_button_package:
+    git:
+      url: https://github.com/Sajinduglas/custom_filled_button_package.git
+      ref: master
 
 dev_dependencies:
   flutter_test:
