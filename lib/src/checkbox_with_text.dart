@@ -44,16 +44,16 @@ class CheckboxWidget extends StatelessWidget {
           text,
           style: textStyle,
         ),
-        CustomFilledButton(
-          icon: filledButtonIcon,
-          buttonText: filledButtonText,
-        )
-        // if (filledButtonText != null) ...[
-        //   CustomFilledButton(
-        //     icon: filledButtonIcon,
-        //     buttonText: filledButtonText,
-        //   )
-        // ]
+        // CustomFilledButton(
+        //   icon: filledButtonIcon,
+        //   buttonText: filledButtonText,
+        // )
+        if (filledButtonText != null) ...[
+          CustomFilledButton(
+            icon: filledButtonIcon,
+            buttonText: filledButtonText,
+          )
+        ]
       ],
     );
   }
