@@ -8,6 +8,7 @@ class CheckboxWidget extends StatelessWidget {
 ///THis Checkbox comes with TEXT widget
   const CheckboxWidget({
     super.key,
+    ///isChecked inu some value assign chy-nm
     required this.isChecked,
     required this.onChanged,
     required this.text,
