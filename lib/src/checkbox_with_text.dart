@@ -7,9 +7,8 @@ class CheckboxWidget extends StatelessWidget {
   final String text;
   final TextStyle? textStyle;
 
-  final IconData? filledButtonIcon;
-
-  final String? filledButtonText;
+  // final IconData? filledButtonIcon;
+  // final String? filledButtonText;
 
   ///THis Checkbox comes with TEXT widget
   const CheckboxWidget({
@@ -20,8 +19,8 @@ class CheckboxWidget extends StatelessWidget {
     required this.onChanged,
     required this.text,
     this.textStyle,
-    this.filledButtonIcon,
-    this.filledButtonText,
+    // this.filledButtonIcon,
+    // this.filledButtonText,
   });
 
   @override
@@ -48,12 +47,12 @@ class CheckboxWidget extends StatelessWidget {
         //   icon: filledButtonIcon,
         //   buttonText: filledButtonText,
         // )
-        if (filledButtonText != null) ...[
-          CustomFilledButton(
-            icon: filledButtonIcon,
-            buttonText: filledButtonText,
-          )
-        ]
+        // if (filledButtonText != null) ...[
+        //   CustomFilledButton(
+        //     icon: filledButtonIcon,
+        //     buttonText: filledButtonText,
+        //   )
+        // ]
       ],
     );
   }
